@@ -3112,11 +3112,11 @@
     <style>
       #hero {
         position: relative;
-        background-image: url("./assets/herosection.png");
+        background-image: url("./assets/heroo.png");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        height: 600px;
+        height: 100vh;
       }
     </style>
     <style>
@@ -3206,32 +3206,40 @@
     "
     data-mobile-width="1200"
   >
-    <div>
+    <div style="position: fixed; bottom: 40px; right: 50px; z-index: 1000">
       <a
         href="./form/index.html"
         target="_blank"
-        class="floating-button"
         style="
           background-color: #ffc300;
-          padding: 10px 20px;
+          padding: 20px 40px; /* Increased padding for a larger button */
           color: white;
-          font-weight: bold;
-          text-align: center;
           text-decoration: none;
-          border-radius: 5px;
+          border-radius: 10px;
           box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-          position: fixed;
-          bottom: 40px;
-          right: 50px;
-          z-index: 1000;
           transition: background-color 0.3s ease;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
         "
         onmouseover="this.style.backgroundColor='#e0a800';"
         onmouseout="this.style.backgroundColor='#ffc300';"
       >
-        Apply Now
+        <div
+          style="
+            font-size: 2em; /* Further increased font size for main text */
+            font-weight: bold;
+            line-height: 1; /* Reduce line height to decrease gap */
+          "
+        >
+          APPLY NOW
+        </div>
+        <div style="font-size: 0.8em; margin-top: 4px">
+          Start Quick 3-min Application
+        </div>
       </a>
     </div>
+
     <header class="wgl-theme-header">
       <div class="wgl-site-header">
         <div class="container-wrapper">
